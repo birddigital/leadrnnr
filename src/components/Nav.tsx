@@ -8,28 +8,25 @@ export const Nav = () => {
     <div className="bg-white pt-4 pr-8 pb-4 pl-8">
       <nav className="w-full">
         <div className="flex w-full justify-between max-w-screen-2xl md:flex-row mt-auto mr-auto mb-auto ml-auto">
-          <div className="flex flex-row bg-white justify-between items-center mt-2 mb-2 md:m-0 hidden md:flex">
-            <a
-              href="#"
-              fontfamily="Raleway"
+          <div className="lg:flex flex-row bg-white justify-between items-center mt-2 mb-2 md:m-0 hidden md:flex">
+            <Link
+              href="/services"
               className="text-gray-600 text-center mr-6 font-medium text-base"
             >
               Services
-            </a>
-            <a
-              href="#"
-              fontfamily="Raleway"
+            </Link>
+            <Link
+              href="/about"
               className="text-gray-600 text-center mr-6 font-medium text-base"
             >
               About Us
-            </a>
-            <a
-              href="#"
-              fontfamily="Raleway"
+            </Link>
+            <Link
+              href="/contact"
               className="text-gray-600 text-center font-medium text-base"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="flex flex-row justify-center items-center order-first md:order-none">
             <Image
@@ -37,12 +34,12 @@ export const Nav = () => {
               className="w-12 md:w-16"
               height={48}
               width={48}
+              alt="Lead RnnR Logo"
             />
           </div>
-          <div className="flex flex-row bg-white justify-center items-center md:m-0 hidden md:flex">
+          <div className="lg:flex flex-row bg-white justify-center items-center md:m-0 hidden md:flex">
             <Link
-              href="#"
-              fontfamily="Raleway"
+              href="/contact"
               className="text-gray-600 text-center mr-6 font-medium text-base"
             >
               <button
@@ -55,14 +52,12 @@ export const Nav = () => {
             </Link>
             <Link
               href="#"
-              fontfamily="Raleway"
               className="text-gray-600 text-center mr-6 font-medium text-lg"
             >
               Sign In
             </Link>
             <Link
               href="#"
-              fontfamily="Raleway"
               className="text-gray-600 text-center font-medium text-lg"
             >
               Sign Up
@@ -89,42 +84,36 @@ export const Nav = () => {
             <div className="flex flex-col">
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-base"
               >
                 Product
               </Link>
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-base"
               >
                 Features
               </Link>
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-base"
               >
                 Pricing
               </Link>
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-base"
               >
                 About Us
               </Link>
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-lg"
               >
                 Sign In
               </Link>
               <Link
                 href="#"
-                fontfamily="Raleway"
                 className="text-gray-600 text-center mt-2 font-medium text-lg"
               >
                 Sign Up

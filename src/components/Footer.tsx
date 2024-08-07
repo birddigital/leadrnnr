@@ -14,6 +14,7 @@ export const Footer = () => {
               className="h-8 w-auto"
               height={32}
               width={32}
+              alt="Lead RnnR Logo"
             />
             <span>Windframe</span>
           </Link>
@@ -23,28 +24,24 @@ export const Footer = () => {
           >
             <Link
               href="#"
-              lineHeight="6"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
               About
             </Link>
             <Link
               href="#"
-              lineHeight="6"
               className="text-center text-sm text-gray-500 hover:text-gray-600"
             >
               Blog
             </Link>
             <Link
               href="#"
-              lineHeight="6"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
               Pricing
             </Link>
             <Link
               href="#"
-              lineHeight="6"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
               Contact
@@ -60,7 +57,6 @@ export const Footer = () => {
                 className="h-full w-full"
                 fill="currentColor"
                 viewBox="0 0 24 24"
-                aria-hidden=""
                 id="Windframe_qvcAWjC6EW"
               >
                 <path
@@ -82,7 +78,6 @@ export const Footer = () => {
                 className="h-full w-full"
                 fill="currentColor"
                 viewBox="0 0 24 24"
-                aria-hidden=""
                 id="Windframe__spOOYciDQT"
               >
                 <path
@@ -107,7 +102,6 @@ export const Footer = () => {
                 className="h-full w-full"
                 fill="currentColor"
                 viewBox="0 0 24 24"
-                aria-hidden=""
                 id="Windframe_kF74bSAGWjT"
               >
                 <path
@@ -147,10 +141,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <p
-          lineHeight="5"
-          className="mt-8 pt-8 text-center text-xs text-gray-500 border-t"
-        >
+        <p className="mt-8 pt-8 text-center text-xs text-gray-500 border-t">
           Copyright © 2024 Lead RnnR | All rights reserved.
         </p>
       </div>

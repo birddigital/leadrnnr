@@ -72,9 +72,8 @@ export const ContactForm = () => {
           <div className="lg:col-span-2">
             <label>Message</label>
             <textarea
-              type="textarea"
               placeholder="Your message"
-              rows="5"
+              rows={5}
               className="mt-1.5 w-full rounded-xl bg-[#171718]
           text-white border-none p-4 focus:outline-none"
             ></textarea>
@@ -83,7 +82,6 @@ export const ContactForm = () => {
         <div className="mt-12 justify-center flex">
           <button
             type="submit"
-            fontfamily="Arial"
             className="rounded-md bg-[#171718] px-8 py-4 text-white"
           >
             Send Message

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/Hero';
 import { Faq } from '@/components/Faq';
@@ -7,7 +5,7 @@ import { Features } from '@/components/Features';
 import { Footer } from '@/components/Footer';
 import { ContactForm } from '@/components/ContactForm';
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
     <>
       <Nav />
@@ -97,4 +95,6 @@ export default function Home() {
       </main> */}
     </>
   );
-}
+};
+
+export default HomePage;

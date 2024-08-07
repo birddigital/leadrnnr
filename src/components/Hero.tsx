@@ -15,6 +15,7 @@ export const Hero = () => {
           className="object-contain object-top w-full h-auto lg:w-auto lg:h-full"
           height={500}
           width={500}
+          alt="Lead RnnR Ipad"
         />
       </div>
       <div className="mr-auto ml-auto flex justify-end relative max-w-xl xl:pr-32 lg:max-w-screen-xl">
@@ -54,7 +55,6 @@ export const Hero = () => {
           <div className="flex flex-col md:flex-row">
             <input
               type="text"
-              fontamily="Raleway"
               placeholder="Email Address"
               className="md:mr-2 focus:border-blue-700
           focus:outline-none focus:shadow-outline flex-grow transition duration-200 appearance-none text-black
