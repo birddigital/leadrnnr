@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Nav />
-        <main>{children}</main>
+        <main className="flex min-h-0 flex-auto flex-col bg-white pl-0 leading-7 text-neutral-800">
+          {children}
+        </main>
         <ContactForm />
         <Footer />
       </body>

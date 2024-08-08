@@ -5,6 +5,7 @@ const nextConfig = {
       "pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev",
       "i.imgur.com",
       "via.placeholder.com",
+      "assets.roofle.com",
     ],
   },
 };
