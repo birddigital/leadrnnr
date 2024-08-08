@@ -9,6 +9,14 @@ export const Nav = () => {
       <nav className="w-full">
         <div className="flex w-full justify-between max-w-screen-2xl md:flex-row mt-auto mr-auto mb-auto ml-auto">
           <div className="lg:flex flex-row bg-white justify-between items-center mt-2 mb-2 md:m-0 hidden md:flex">
+            <Image
+              src="https://pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev/LeadRnnR%20Logo.png"
+              className="w-12 md:w-16"
+              height={48}
+              width={48}
+              alt="Lead RnnR Logo"
+            />
+
             <Link
               href="/services"
               className="text-gray-600 text-center mr-6 font-medium text-base"
@@ -25,17 +33,8 @@ export const Nav = () => {
               href="/contact"
               className="text-gray-600 text-center font-medium text-base"
             >
-              Contact
+              Contact Us
             </Link>
-          </div>
-          <div className="flex flex-row justify-center items-center order-first md:order-none">
-            <Image
-              src="https://pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev/LeadRnnR%20Logo.png"
-              className="w-12 md:w-16"
-              height={48}
-              width={48}
-              alt="Lead RnnR Logo"
-            />
           </div>
           <div className="lg:flex flex-row bg-white justify-center items-center md:m-0 hidden md:flex">
             <Link

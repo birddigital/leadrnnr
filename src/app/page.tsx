@@ -4,6 +4,8 @@ import { Faq } from '@/components/Faq';
 import { Features } from '@/components/Features';
 import { Footer } from '@/components/Footer';
 import { ContactForm } from '@/components/ContactForm';
+import { Pricing } from '@/components/Pricing';
+import { Reviews } from '@/components/Reviews';
 
 const HomePage: React.FC = () => {
   return (
@@ -11,7 +13,9 @@ const HomePage: React.FC = () => {
       <Nav />
       <Hero />
       <Features />
+      <Pricing />
       <Faq />
+      <Reviews />
       <ContactForm />
       <Footer />
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
