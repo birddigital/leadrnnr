@@ -1,23 +1,20 @@
-import { Nav } from '@/components/Nav';
-import { Hero } from '@/components/Hero';
-import { Faq } from '@/components/Faq';
-import { Features } from '@/components/Features';
-import { Footer } from '@/components/Footer';
-import { ContactForm } from '@/components/ContactForm';
-import { Pricing } from '@/components/Pricing';
-import { Reviews } from '@/components/Reviews';
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Faq } from "@/components/Faq";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
+import { ContactForm } from "@/components/ContactForm";
+import { Pricing } from "@/components/Pricing";
+import { Reviews } from "@/components/Reviews";
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <Nav />
       <Hero />
       <Features />
       <Pricing />
       <Faq />
       <Reviews />
-      <ContactForm />
-      <Footer />
       {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none"></div>

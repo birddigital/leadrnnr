@@ -1,56 +1,55 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export const Footer = () => {
   // Please use 'useState()' to implement Navbar functionality
   return (
     <footer className="bg-white py-20">
-      <div className="mx-auto px-6 py-2 lg:px-8 max-w-screen-2xl overflow-hidden">
-        <div className="items-center justify-between lg:flex-row flex flex-col gap-5">
-          <Link href="#" className="items-end flex gap-1.5">
+      <div className="mx-auto max-w-screen-2xl overflow-hidden px-6 py-2 lg:px-8">
+        <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
+          <Link href="/" className="flex flex-col items-end gap-1.5 text-black">
             <Image
               src="https://pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev/LeadRnnR%20Logo.png"
-              className="h-8 w-auto"
-              height={32}
-              width={32}
+              className="h-40 w-auto"
+              height={400}
+              width={400}
               alt="Lead RnnR Logo"
             />
-            <span>Windframe</span>
           </Link>
           <nav
             aria-label="Footer"
-            className="mt-8 sm:flex sm:justify-center md:mt-0 place-item-center grid grid-cols-2 gap-6"
+            className="place-item-center mt-8 grid grid-cols-2 gap-6 sm:flex sm:justify-center md:mt-0"
           >
             <Link
-              href="#"
+              href="/about"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
-              About
+              About Us
             </Link>
             <Link
-              href="#"
+              href="/services"
               className="text-center text-sm text-gray-500 hover:text-gray-600"
             >
-              Blog
+              Services
             </Link>
             <Link
-              href="#"
+              href="#pricing"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
               Pricing
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="text-sm text-gray-500 hover:text-gray-600"
             >
-              Contact
+              Contact Us
             </Link>
           </nav>
-          <div className="mt-8 justify-center md:mt-0 flex space-x-4">
+          <div className="mt-8 flex justify-center space-x-4 md:mt-0">
             <Link
-              href="#"
-              className="h-8 w-8 bg-gray-200 text-gray-500 p-2 cursor-pointer rounded hover:text-gray-600"
+              href="https://facebook.com"
+              className="h-8 w-8 cursor-pointer rounded bg-gray-200 p-2 text-gray-500 hover:text-gray-600"
             >
               <span className="sr-only">Facebook</span>
               <svg
@@ -70,8 +69,8 @@ export const Footer = () => {
               </svg>
             </Link>
             <Link
-              href="#"
-              className="h-8 w-8 bg-gray-200 text-gray-500 p-2 cursor-pointer rounded hover:text-gray-600"
+              href="https://instagram.com"
+              className="h-8 w-8 cursor-pointer rounded bg-gray-200 p-2 text-gray-500 hover:text-gray-600"
             >
               <span className="sr-only">Instagram</span>
               <svg
@@ -94,8 +93,8 @@ export const Footer = () => {
               </svg>
             </Link>
             <Link
-              href="#"
-              className="h-8 w-8 bg-gray-200 text-gray-500 p-2 cursor-pointer rounded hover:text-gray-600"
+              href="https://x.com"
+              className="h-8 w-8 cursor-pointer rounded bg-gray-200 p-2 text-gray-500 hover:text-gray-600"
             >
               <span className="sr-only">X</span>
               <svg
@@ -113,8 +112,8 @@ export const Footer = () => {
               </svg>
             </Link>
             <Link
-              href="#"
-              className="h-8 w-8 bg-gray-200 text-gray-500 p-2 cursor-pointer rounded hover:text-gray-600"
+              href="https://linkedin.com"
+              className="h-8 w-8 cursor-pointer rounded bg-gray-200 p-2 text-gray-500 hover:text-gray-600"
             >
               <span className="sr-only">LinkedIn</span>
               <svg
@@ -141,8 +140,8 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <p className="mt-8 pt-8 text-center text-xs text-gray-500 border-t">
-          Copyright © 2024 Lead RnnR | All rights reserved.
+        <p className="mt-8 border-t pt-8 text-center text-xs text-gray-500">
+          &copy; {new Date().getFullYear()} Lead RnnR. All rights reserved.
         </p>
       </div>
     </footer>

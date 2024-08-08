@@ -31,3 +31,87 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  button {
+    @apply transition duration-200 hover:bg-blue-900 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:outline-none bg-blue-700 text-white inline-flex font-semibold tracking-wide h-12 rounded-md shadow-md items-center justify-center pr-6 pl-6 mr-6;
+  }
+}
+
+/* keyframes */
+
+@keyframes gradientAnimation {
+  0% {
+    background-color: #460ba7; /* brandPurple-900 */
+  }
+  11.11% {
+    background-color: #530bcc; /* brandPurple-800 */
+  }
+  22.22% {
+    background-color: #640ef3; /* brandPurple-700 */
+  }
+  33.33% {
+    background-color: #721fff; /* brandPurple-600 */
+  }
+  44.44% {
+    background-color: #7f45ff; /* brandPurple-500 */
+  }
+  55.55% {
+    background-color: #9d7bff; /* brandPurple-400 */
+  }
+  66.66% {
+    background-color: #bdaaff; /* brandPurple-300 */
+  }
+  77.77% {
+    background-color: #d8d0ff; /* brandPurple-200 */
+  }
+  88.88% {
+    background-color: #ebe6ff; /* brandPurple-100 */
+  }
+  100% {
+    background-color: white; /* end with white */
+  }
+}
+
+@keyframes diagonalGradient {
+  0% {
+    background: linear-gradient(135deg, #460ba7 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #460ba7 25%), linear-gradient(135deg, #460ba7 25%, transparent 25%);
+  }
+  11.11% {
+    background: linear-gradient(135deg, #530bcc 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #530bcc 25%), linear-gradient(135deg, #530bcc 25%, transparent 25%);
+  }
+  22.22% {
+    background: linear-gradient(135deg, #640ef3 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #640ef3 25%), linear-gradient(135deg, #640ef3 25%, transparent 25%);
+  }
+  33.33% {
+    background: linear-gradient(135deg, #721fff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #721fff 25%), linear-gradient(135deg, #721fff 25%, transparent 25%);
+  }
+  44.44% {
+    background: linear-gradient(135deg, #7f45ff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #7f45ff 25%), linear-gradient(135deg, #7f45ff 25%, transparent 25%);
+  }
+  55.55% {
+    background: linear-gradient(135deg, #9d7bff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #9d7bff 25%), linear-gradient(135deg, #9d7bff 25%, transparent 25%);
+  }
+  66.66% {
+    background: linear-gradient(135deg, #bdaaff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #bdaaff 25%), linear-gradient(135deg, #bdaaff 25%, transparent 25%);
+  }
+  77.77% {
+    background: linear-gradient(135deg, #d8d0ff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #d8d0ff 25%), linear-gradient(135deg, #d8d0ff 25%, transparent 25%);
+  }
+  88.88% {
+    background: linear-gradient(135deg, #ebe6ff 25%, transparent 25%), linear-gradient(135deg, transparent 25%, #ebe6ff 25%), linear-gradient(135deg, #ebe6ff 25%, transparent 25%);
+  }
+  100% {
+    background: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(135deg, transparent 25%, white 25%), linear-gradient(135deg, white 25%, transparent 25%);
+  }
+}
+
+/* animations */
+
+.animated-gradient {
+  animation: gradientAnimation 4s linear forwards;
+}
+
+.animated-diagonal-gradient {
+  animation: diagonalGradient 4s linear infinite;
+}

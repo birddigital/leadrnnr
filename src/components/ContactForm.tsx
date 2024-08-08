@@ -1,19 +1,15 @@
-import React from 'react';
+import React from "react";
 
 export const ContactForm = () => {
   return (
-    <section className="bg-black py-20 text-white p-6 relative isolate">
-      <span
-        className="h-full w-full items-center justify-center inline-flex absolute inset-0 -z-10 opacity-40
-    [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-      >
+    <section className="relative isolate bg-black p-6 py-20 text-white">
+      <span className="absolute inset-0 -z-10 inline-flex h-full w-full items-center justify-center opacity-40 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
         <svg
           id="patternId"
           width="100%"
           height="100%"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full
-      h-full"
+          className="h-full w-full"
         >
           <defs>
             <pattern
@@ -43,21 +39,20 @@ export const ContactForm = () => {
         </svg>
       </span>
       <div className="mx-auto max-w-3xl p-6">
-        <p className="text-center font-bold tracking-widest text-gray-500 mb-2 uppercase">
+        <p className="mb-2 text-center font-bold uppercase tracking-widest text-gray-500">
           contact us
         </p>
-        <p className="text-center text-4xl lg:text-6xl font-bold tracking-tight text">
+        <p className="text text-center text-4xl font-bold tracking-tight lg:text-6xl">
           We&apos;re committed to providing you with the best possible
           experience
         </p>
-        <div className="mt-12 lg:grid-cols-2 grid gap-10">
+        <div className="mt-12 grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col">
             <label>Name</label>
             <input
               type="text"
               placeholder="James Ghost"
-              className="p-4 focus:outline-none border-none mt-1.5 rounded-xl
-          bg-[#171718] text-white"
+              className="mt-1.5 rounded-xl border-none bg-[#171718] p-4 text-white focus:outline-none"
             />
           </div>
           <div className="flex flex-col">
@@ -65,8 +60,7 @@ export const ContactForm = () => {
             <input
               type="email"
               placeholder="jammieghost1@empire.co"
-              className="p-4 focus:outline-none border-none mt-1.5
-          rounded-xl bg-[#171718] text-white"
+              className="mt-1.5 rounded-xl border-none bg-[#171718] p-4 text-white focus:outline-none"
             />
           </div>
           <div className="lg:col-span-2">
@@ -74,18 +68,12 @@ export const ContactForm = () => {
             <textarea
               placeholder="Your message"
               rows={5}
-              className="mt-1.5 w-full rounded-xl bg-[#171718]
-          text-white border-none p-4 focus:outline-none"
+              className="mt-1.5 w-full rounded-xl border-none bg-[#171718] p-4 text-white focus:outline-none"
             ></textarea>
           </div>
         </div>
-        <div className="mt-12 justify-center flex">
-          <button
-            type="submit"
-            className="rounded-md bg-[#171718] px-8 py-4 text-white"
-          >
-            Send Message
-          </button>
+        <div className="mt-12 flex justify-center">
+          <button type="submit">Send Message</button>
         </div>
       </div>
     </section>

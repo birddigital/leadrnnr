@@ -1,69 +1,65 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export const Nav = () => {
   // Please use 'useState()' to implement Navbar functionality
   return (
-    <div className="bg-white pt-4 pr-8 pb-4 pl-8">
+    <div className="bg-white pb-4 pl-8 pr-8 pt-4">
       <nav className="w-full">
-        <div className="flex w-full justify-between max-w-screen-2xl md:flex-row mt-auto mr-auto mb-auto ml-auto">
-          <div className="lg:flex flex-row bg-white justify-between items-center mt-2 mb-2 md:m-0 hidden md:flex">
-            <Image
-              src="https://pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev/LeadRnnR%20Logo.png"
-              className="w-12 md:w-16"
-              height={48}
-              width={48}
-              alt="Lead RnnR Logo"
-            />
+        <div className="mb-auto ml-auto mr-auto mt-auto flex w-full max-w-screen-2xl justify-between md:flex-row">
+          <div className="mb-2 mt-2 hidden flex-row items-center justify-between space-x-5 bg-white md:m-0 md:flex lg:flex">
+            <Link href="/">
+              <Image
+                src="https://pub-d6209fb2057b4e7cbf34355d9f0ee06b.r2.dev/LeadRnnR%20Logo.png"
+                className="h-20 md:w-auto"
+                height={400}
+                width={400}
+                alt="Lead RnnR Logo"
+              />
+            </Link>
 
             <Link
               href="/services"
-              className="text-gray-600 text-center mr-6 font-medium text-base"
+              className="mr-6 text-center text-base font-medium text-gray-600"
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 text-center mr-6 font-medium text-base"
+              className="mr-6 text-center text-base font-medium text-gray-600"
             >
               About Us
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 text-center font-medium text-base"
+              className="text-center text-base font-medium text-gray-600"
             >
               Contact Us
             </Link>
           </div>
-          <div className="lg:flex flex-row bg-white justify-center items-center md:m-0 hidden md:flex">
+          <div className="hidden flex-row items-center justify-center bg-white md:m-0 md:flex lg:flex">
             <Link
               href="/contact"
-              className="text-gray-600 text-center mr-6 font-medium text-base"
+              className="mr-6 text-center text-base font-medium text-gray-600"
             >
-              <button
-                className="transition duration-200 hover:bg-blue-900 focus:shadow-outline focus:outline-none bg-blue-700
-          text-white inline-flex font-semibold tracking-wide h-12 rounded-md shadow-md items-center justify-center
-          pr-6 pl-6 mr-6"
-              >
-                Get Started
-              </button>
+              <button>Get Started</button>
             </Link>
             <Link
               href="#"
-              className="text-gray-600 text-center mr-6 font-medium text-lg"
+              className="mr-6 text-center text-lg font-medium text-gray-600"
             >
               Sign In
             </Link>
             <Link
               href="#"
-              className="text-gray-600 text-center font-medium text-lg"
+              className="text-center text-lg font-medium text-gray-600"
             >
               Sign Up
             </Link>
           </div>
-          <div className="md:hidden flex ml-auto items-center">
-            <div className="outline-none mobile-menu-button">
+          <div className="ml-auto flex items-center md:hidden">
+            <div className="mobile-menu-button outline-none">
               <svg
                 id="Windframe_WY4-RbRa7b"
                 fill="none"
@@ -71,49 +67,49 @@ export const Nav = () => {
                 strokeWidth="2"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="w-6 h-6 text-gray-500 hover:text-green-500"
+                className="h-6 w-6 text-gray-500 hover:text-green-500"
               >
                 <path id="Windframe_2G0jOEm-Efl" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </div>
           </div>
         </div>
-        <div className="hidden md:hidden mobile-menu">
+        <div className="mobile-menu hidden md:hidden">
           <div>
             <div className="flex flex-col">
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-base"
+                className="mt-2 text-center text-base font-medium text-gray-600"
               >
                 Product
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-base"
+                className="mt-2 text-center text-base font-medium text-gray-600"
               >
                 Features
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-base"
+                className="mt-2 text-center text-base font-medium text-gray-600"
               >
                 Pricing
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-base"
+                className="mt-2 text-center text-base font-medium text-gray-600"
               >
                 About Us
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-lg"
+                className="mt-2 text-center text-lg font-medium text-gray-600"
               >
                 Sign In
               </Link>
               <Link
                 href="#"
-                className="text-gray-600 text-center mt-2 font-medium text-lg"
+                className="mt-2 text-center text-lg font-medium text-gray-600"
               >
                 Sign Up
               </Link>
